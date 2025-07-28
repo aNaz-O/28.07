@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MIX & MATCH</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>MIX & MATCH</h1>
+    <label for="clothingUpload" class="cute-upload-button">Upload</label>
+    <input type="file" id="clothingUpload" accept="image/*" style="display: none;" />
+    <button id="viewOutfitsButton">My Outfits</button>
+  </header>
+
+  <main>
+    <div id="bodyArea" class="drop-zone">
+      <img id="bodyImage" src="https://i.pinimg.com/736x/dd/3a/de/dd3ade6685fab0fc7c72b30f944da956.jpg" alt="Body" />
+    </div>
+
+    <!-- Save button container -->
+    <div id="saveButtonContainer" style="position: relative; margin: -10px auto 10px auto; text-align: center;">
+      <!-- Save button will be inserted here by JS -->
+    </div>
+
+    <div id="sideButtons">
+  <div class="side left-side">
+    <button class="category-button" data-cat="tops">Tops</button>
+    <button class="category-button" data-cat="bottoms">Bottoms</button>
+    <button class="category-button" data-cat="dresses">Dresses</button> 
+  </div>
+  <div class="side right-side">
+    <button class="category-button" data-cat="shoes">Shoes</button>
+    <button class="category-button" data-cat="accessories">Accessories</button>
+    <button class="category-button" data-cat="bags">Bags</button> 
+  </div>
+</div>
+
+
+    <div id="clothingLibrary">
+  <div id="tops" class="category hidden"></div>
+  <div id="bottoms" class="category hidden"></div>
+  <div id="shoes" class="category hidden"></div>
+  <div id="accessories" class="category hidden"></div>
+  <div id="dresses" class="category hidden"></div> 
+  <div id="bags" class="category hidden"></div>     
+</div>
+
+    </div>
+  </main>
+
+  <!-- Modal for saved outfits -->
+  <div id="outfitsModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h2>My Saved Outfits</h2>
+      <div id="outfitsGallery"></div>
+      <button id="closeOutfitsModal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
