@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marimo Parenting</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="mybg"></div>
+
+    <img id="nameB" src="assets/name.png">
+    <h2 id="nameDisplay" style="position: fixed; top: 17%; left: 50%; transform: translateX(-50%); font-family: VT323; font-size: 35px; "></h2>
+
+    <div id="mainPage">
+        <header>    
+        <h1>MARIMO PARENTING</h1>
+        </header>
+        <img src="assets/marimo.png" class="marimoimg" id="marimoimg">
+        <div options="buttons">
+            <img id="watering" src="assets/watering.png" alt="Watering"/>
+            <img id="vitamin" src="assets/vitamin.png" alt="Vitamin"/>
+            <img id="caring" src="assets/caring.png" alt="Caring"/>
+        </div>
+    </div>
+
+    <div id="wateringPage" style="display: none">
+        <img src="assets/marimo.png" class = "marimoimg" id = "watermain">
+        <p id="wateringTimer">
+            --:--:--
+        </p>
+        <img id="waterme" src="assets/waterme.png"/>
+    </div>
+
+    <div id="vitaminPage" style="display: none">
+        <img src="assets/marimo.png" class="marimoimg" id = "vitaminmain">
+        <p id="vitaminTimer">
+            --:--:--
+        </p>
+        <img id="givevitamin" src="assets/givevitamin.png"/>
+    </div>
+
+    <div id="caringPage" style="display: none">
+        <img src="assets/marimo.png" class="marimoimg" id = "caremain">
+        <p id="caringTimer">
+            --:--:--
+        </p>
+        <img id="care" src="assets/care.png"/>
+    </div>
+
+    <img id="back" src="assets/back.png" style="display: none"/>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

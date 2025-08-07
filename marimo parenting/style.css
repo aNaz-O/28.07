@@ -1,0 +1,158 @@
+header{
+  font-size: 40px;
+  color:rgb(3, 70, 18);
+  top: 120px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+.mybg {
+  background-image: url('assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  opacity: 0.7;
+  inset: 0;
+  z-index: -1;
+}
+
+.marimoimg {
+  width: 320px;
+  position: absolute;
+  top: 43%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 45px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'VT323';
+}
+
+#watering {
+  width:275px; 
+  height:150px; 
+  cursor:pointer; 
+  position: absolute;
+  top: 63%;
+  left: 24%;
+  transition: transform 0.3s ease;
+}
+
+#watering:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+#vitamin {
+  width:300px; 
+  height:167px; 
+  cursor:pointer; 
+  position: absolute;
+  top: 63%;
+  left: 38.75%;
+  transition: transform 0.3s ease;
+}
+
+#vitamin:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+#caring {
+  width:300px; 
+  height:167px; 
+  cursor:pointer; 
+  position: absolute;
+  top: 63%;
+  left: 55.25%;
+  transition: transform 0.3s ease;
+}
+
+#caring:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+#waterme {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 60%;
+  left: 42%;
+  transition: transform 0.3s ease;
+}
+
+#waterme:hover {
+  filter: brightness(1.2);
+  transform:scale(1.1);
+}
+
+#givevitamin {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 60%;
+  left: 42%;
+  transition: transform 0.3s ease;
+}
+
+#givevitamin:hover {
+  filter: brightness(1.2);
+  transform:scale(1.1) ;
+}
+
+#care {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 60%;
+  left: 42%;
+  transition: transform 0.3s ease;
+}
+
+#care:hover {
+  filter: brightness(1.2);
+  transform:scale(1.1) ;
+}
+
+#back {
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  top: 0%;
+  left: 0.5%;
+  perspective: 600px;
+  transition: transform 0.3s;
+}
+
+#back:hover {
+  transform: translateX(-20%);
+}
+
+
+#nameB {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -3%;
+  right: 0%;
+  perspective: 300px;
+  transition: transform 0.3s;
+}
+
+#nameB:hover {
+  transform: translateY(-5%);
+}
+
+#wateringTimer, #vitaminTimer, #caringTimer {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 70px;
+  color: rgb(3, 85, 21);
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+}
+
